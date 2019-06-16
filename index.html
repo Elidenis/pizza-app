@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.4.0.js"></script>
+<script src="js/scripts.js"></script>
+    <title>Pizza!</title>
+  </head>
+
+  <body>
+    <!--ENTIRE CONTAINER-->
+    <div class="container bg-dark text-black">
+      <div class='title'>
+        <h1>Ras Pizza(s)</h1>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src='./images/cup.jpeg' alt="pizza" style="width:80%">
+        </div>
+        <div class="column">
+          <img src='./images/pizza1.jpeg' alt="pizza" style="width:80%">
+        </div>
+        <div class="column">
+          <img src='./images/pizza.jpeg' alt="pizza" style="width:100%">
+        </div>
+      </div>
+      <form class='my-5'>
+        <!---/PIZZA SIZE-
+        Radio buttons for a size selection:
+        Small, Medium and large
+        --------------------------------------->
+        <div class='row'>
+
+          <!--small-->
+          <div class="col-3 text-center text-white">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="small" value="small" required>
+              <label class="custom-control-label" for="small">
+                <img id='smallPic' class='img-fluid' src='./images/images.jpeg' alt='small size pizza, $6.00'>
+                <div>Small ($7.00)</div>
+              </label>
+            </div>
+          </div>
+          <!--/small-->
+
+          <!--MEDIUM-->
+          <div class="col-3 text-center text-white">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="medium" value="Medium">
+              <label class="custom-control-label" for="medium">
+                <img id='mediumPic' class='img-fluid' src='./images/images.jpeg' alt='medium size pizza, $10.00'>
+                <div>Medium ($10.00)</div>
+              </label>
+            </div>
+          </div>
+          <!--/MEDIUM-->
+
+          <!--LARGE-->
+          <div class="col-3 text-center text-white">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="large" value="Large">
+              <label class="custom-control-label" for="large">
+                <img id='largePic' class='img-fluid' src='./images/images.jpeg' alt='large size pizza, $14.00'>
+                <div>Large ($13.00)</div>
+              </label>
+            </div>
+          </div>
+          <!--/LARGE-->
+        </div>
+        <!---/PIZZA SIZE---------->
+
+        <!--CUSTOMIZE-->
+        <div class='row justify-content-center my-5'>
+
+          <!---MEATS-
+          Check boxes for multiple selection of meats:
+          Pepperoni, Sausage,
+          Beef and Chicken
+          -------------------------------------------->
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>MEAT</h5>
+            <p> $1.00 for each additional meat.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input meat" type="checkbox" value="Pepperoni" id="pepperoni">
+              <label class="form-check-label" for="pepperoni">
+                Pepperoni
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input meat" type="checkbox" value="Sausage" id="sausage">
+              <label class="form-check-label" for="sausage">
+                Sausage
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input meat" type="checkbox" value=" Beef" id="Beef">
+              <label class="form-check-label" for="Beef">
+                 Beef
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input meat" type="checkbox" value="Chicken" id="chicken">
+              <label class="form-check-label" for="chicken">
+                Chicken
+              </label>
+            </div>
+          </div>
+          <!---/MEATS----------------->
+
+          <!---/VEGGIES-
+          Check boxes for multiple selection of veggies:
+          Tomatoes, Onions, Green Peppers, Mushrooms,
+          Pineapple and lettuce
+          --------------------------------------------->
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>VEGGIE(s)</h5>
+            <p> $1.00 for each additional veggie.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Tomatoes" id="tomatoes">
+              <label class="form-check-label" for="tomatoes">
+                Tomatoes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Onions" id="onions">
+              <label class="form-check-label" for="onions">
+                Onions
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Mushrooms" id="mushrooms">
+              <label class="form-check-label" for="mushrooms">
+                Mushrooms
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Pineapple" id="pineapple">
+              <label class="form-check-label" for="pineapple">
+                Pineapple
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="lettuce" id="lettuce">
+              <label class="form-check-label" for="lettuce">
+                lettuce
+              </label>
+          </div>
+        </div>
+          <!---/VEGGIES-------------->
+
+          <!---CHEESE-
+          Radio buttons for a cheese selection:
+          Normal, No cheese, Extra Cheese
+          ------------------------------------------>
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>CHEESE</h5>
+            <p>Select from choices below.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="Normal Cheese" id="normalCheese" checked>
+              <label class="form-check-label" for="normalCheese">
+                Normal Cheese
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="No Cheese" id="noCheese">
+              <label class="form-check-label" for="noCheese">
+                No Cheese
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="Extra Cheese" id="extraCheese">
+              <label class="form-check-label" for="extraCheese">
+                Extra Cheese ($2)
+              </label>
+            </div>
+          </div>
+          <!---/CHEESE--------------->
+        </div>
+        <!--/CUSTOMIZE-->
+
+        <!--BUTTONS-->
+        <div class='row'>
+          <div class='col text-center mb-5'>
+            <button class='btn btn-warning' type=submit>Submit Order</button>
+            <button class='btn btn-light' type="reset">Reset</button>
+          </div>
+        </div>
+        <!--/BUTTONS-->
+      </form>
+      <!--/FORM-->
+      <div class="row">
+    <div class="column">
+      <img src='./images/dancing.webp' align="center">
+    </div>
+    <div class="column">
+      <img src='./images/time.webp'>
+    </div>
+    <div class="column">
+      <img src='./images/ras.webp'>
+    </div>
+  </div>
+
+      <!---RECEIPT--------->
+      <div id='receipt' class='row'>
+        <div class='col'>
+          <h3>Order Received!</h3>
+          <p>This is your receipt.</p>
+          <hr>
+          <div class='row'>
+            <div class='col p-3'>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Size:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='sizeSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='sizeCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Cheese:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='cheeseSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='cheeseCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Meat:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='meatSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='meatCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Veggie:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='veggieSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='veggieCost'></span>
+                </div>
+              </div>
+              <div class='row' id='total'>
+                <div class='col'>
+                  TOTAL: <span class='costs'>$<span id='totalCost'></span>.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---/RECEIPT------->
+      <button id='orderAgain' class='btn btn-success'>Order Again!</button>
+    </div>
+    <!--/ENTIRE CONTAINER-->
+  </body>
+</html>
