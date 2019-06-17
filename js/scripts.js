@@ -26,13 +26,13 @@ function calculateMeatVeggie(array) {
 
 function calculateCheese() {
   if ($('input[name=cheeseRadio]:checked').val() === 'Extra Cheese') {
-    var cost = 3;
+    var cost = 2;
     return cost;
   } else return 0;
 };
 function calculateSize(size) {
-  if (size === "Personal") {
-    return 6;
+  if (size === "small") {
+    return 7;
   } else if (size === "Medium") {
     return 10;
   } else if (size === "Large") {
