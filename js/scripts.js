@@ -11,7 +11,8 @@ function getValues() {
     veggies[v] = $(this).val();
   });
   var cheese = $('input[name=cheeseRadio]:checked').val();
-  var values = [size, meats, veggies, cheese];
+  var crust = $('input[name=crustRadio]:checked').val();
+  var values = [size, meats, veggies, crust, cheese];
   return values;
 };
 
@@ -27,6 +28,12 @@ function calculateMeatVeggie(array) {
 function calculateCheese() {
   if ($('input[name=cheeseRadio]:checked').val() === 'Extra Cheese') {
     var cost = 2;
+    return cost;
+  } else return 0;
+};
+function calculateCrust() {
+  if ($('input[name=crustRadio]:checked').val() === 'Cheese Stuffed Crust') {
+    var cost = 3;
     return cost;
   } else return 0;
 };
@@ -60,17 +67,21 @@ $(function() {
     var meats = valuesArray[1];
     var veggies = valuesArray[2];
     var cheese = valuesArray[3];
+    var crust = valuesArray[4];
     var sizeCost = calculateSize(size);
     var meatCost = calculateMeatVeggie(meats);
     var veggieCost = calculateMeatVeggie(veggies);
     var cheeseCost = calculateCheese();
-    var totalCost = sizeCost + meatCost + veggieCost + cheeseCost;
+    var crustCost = calculateCrust();
+    var totalCost = sizeCost + meatCost + crustCost + veggieCost + cheeseCost;
 
     meats = concat(meats, meatCost);
     veggies = concat(veggies, veggieCost);
 
     $('#sizeSelection').html(size);
     $('#sizeCost').html(sizeCost);
+    $('#crustSelection').html(crust);
+    $('#crustCost').html(crustCost);
     $('#cheeseCost').html(cheeseCost);
     $('#meatSelection').html(meats);
     $('#meatCost').html(meatCost);

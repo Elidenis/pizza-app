@@ -152,6 +152,47 @@
           </div>
         </div>
           <!---/VEGGIES-------------->
+          <!------------------CRUST------------------
+          Radio buttons for a crust selection:
+          Plain Crust, Garlic Butter Crust, Cheese Stuffed Crust,
+          Spicy Crust, and House Special Crust
+          ------------------------------------------->
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>CRUST</h5>
+            <p>Select from choices below.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Plain Crust" id="plainCrust" checked>
+              <label class="form-check-label" for="plainCrust">
+                Plain Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Garlic Butter Crust" id="garlicCrust">
+              <label class="form-check-label" for="garlicCrust">
+                Garlic Butter Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Cheese Stuffed Crust" id="cheeseCrust">
+              <label class="form-check-label" for="cheeseCrust">
+                Cheese Stuffed Crust ($3)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Spicy Crust" id="spicyCrust">
+              <label class="form-check-label" for="spicyCrust">
+                Spicy Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="House Special Crust" id="houseCrust">
+              <label class="form-check-label" for="houseCrust">
+                House Special Crust
+              </label>
+            </div>
+          </div>
+          <!----------------/CRUST------------>
 
           <!---CHEESE-
           Radio buttons for a cheese selection:
@@ -223,6 +264,17 @@
                 </div>
                 <div class='col-2 text-right'>
                   <span class='costs' id='sizeCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Crust:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='crustSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='crustCost'></span>
                 </div>
               </div>
               <div class='row receiptRow'>
