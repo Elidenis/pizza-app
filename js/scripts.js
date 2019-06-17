@@ -88,7 +88,7 @@ $(function() {
   $('#orderAgain').click(function() {
     event.preventDefault;
     $('form').trigger('reset');
-    $('form').slideToggle(800);
+    $('form').slideToggle(700);
     $('#receipt').slideToggle(800);
     $('#orderAgain').hide();
   });
