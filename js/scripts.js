@@ -34,7 +34,7 @@ function calculateSize(size) {
   if (size === "small") {
     return 7;
   } else if (size === "Medium") {
-    return 11;
+    return 10;
   } else if (size === "Large") {
     return 14;
   }
