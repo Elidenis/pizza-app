@@ -1,3 +1,5 @@
-# Use this form to order a pizza!
+# _Pizza Ordering Website_
 
-HTML, CSS & Javascript project for The Tech Academy
+### By _**Eli Denis**_
+
+## Description
